@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="menu-container">
+      <div class="menu-title"> Desserts</div>
+
+      <div class="menu-item-wrapper" id="menu-item-wrapper">
+        <!-- <div class="menu-card-wrapper">
+          <img class="item-image" src="./assets/images/image-waffle-desktop.jpg">
+          <div class="item-action item-action-buttons" id="waffle">
+            <img class="icon icon-add-to-cart" src="./assets/images/icon-add-to-cart.svg" alt="add to cart Icon">
+            <span class="icon-add-to-cart-title" >Add to Cart</span>
+          </div>
+          <div class="item-action-buttons item-action-buttons-selected" id="waffle">
+            <div class="icon-wrapper icon-decrement" id="waffle">
+              <img class="icon-selected icon-decrement-quantity" src="./assets/images/icon-decrement-quantity.svg" alt="decrement cart Icon">
+            </div>
+            <span class="cart-quantity waffle">1</span>
+            <div class="icon-wrapper icon-increment" id="waffle">
+              <img class="icon-selected icon-increment-quantity" src="./assets/images/icon-increment-quantity.svg" alt="increment cart Icon">
+            </div>
+          </div>
+          <div class="item-name menu-item">Waffle </div>
+          <div class="item-description menu-item">Waffle with Berries</div>
+          <div class="item-price menu-item">$6.50</div>
+        </div>
+
+        <div class="menu-card-wrapper">
+          <img class="item-image" src="./assets/images/image-creme-brulee-desktop.jpg">
+          <div class="item-action item-action-buttons" id="cremebrulee">
+            <img class="icon icon-add-to-cart" src="./assets/images/icon-add-to-cart.svg" alt="add to cart Icon">
+            <span class="icon-add-to-cart-title" >Add to Cart</span>
+          </div>
+          <div class="item-action-buttons item-action-buttons-selected" id="cremebrulee">
+            <div class="icon-wrapper icon-decrement" id="cremebrulee">
+              <img class="icon-selected icon-decrement-quantity" src="./assets/images/icon-decrement-quantity.svg" alt="decrement cart Icon">
+            </div>
+            <span class="cart-quantity cremebrulee">1</span>
+            <div class="icon-wrapper icon-increment" id="cremebrulee">
+              <img class="icon-selected icon-increment-quantity" src="./assets/images/icon-increment-quantity.svg" alt="increment cart Icon">
+            </div>
+          </div>
+          <div class="item-name menu-item">Crème Brûlée </div>
+          <div class="item-description menu-item">Vanilla Bean Crème Brûlée</div>
+          <div class="item-price menu-item">$7.00</div>
+        </div>
+
+        <div class="menu-card-wrapper">
+          <img class="item-image" src="./assets/images/image-macaron-desktop.jpg">
+          <div class="item-action item-action-buttons" id="macaron">
+            <img class="icon icon-add-to-cart" src="./assets/images/icon-add-to-cart.svg" alt="add to cart Icon">
+            <span class="icon-add-to-cart-title" >Add to Cart</span>
+          </div>
+          <div class="item-action-buttons item-action-buttons-selected" id="macaron">
+            <div class="icon-wrapper icon-decrement" id="macaron">
+              <img class="icon-selected icon-decrement-quantity" src="./assets/images/icon-decrement-quantity.svg" alt="decrement cart Icon">
+            </div>
+            <span class="cart-quantity macaron">1</span>
+            <div class="icon-wrapper icon-increment" id="macaron">
+              <img class="icon-selected icon-increment-quantity" src="./assets/images/icon-increment-quantity.svg" alt="increment cart Icon">
+            </div>
+          </div>
+          <div class="item-name menu-item">Macaron</div>
+          <div class="item-description menu-item">Macaron Mix of Five</div>
+          <div class="item-price menu-item">$8.00</div>
+        </div> -->
+
+         <!-- <div class="menu-card-wrapper">
+          <img class="item-image" src="./assets/images/image-tiramisu-desktop.jpg">
+          <div class="item-action item-action-buttons" id="tiramisu">
+            <img class="icon icon-add-to-cart" src="./assets/images/icon-add-to-cart.svg" alt="add to cart Icon">
+            <span class="icon-add-to-cart-title" >Add to Cart</span>
+          </div>
+          <div class="item-action-buttons item-action-buttons-selected" id="tiramisu">
+            <div class="icon-wrapper icon-decrement" id="tiramisu">
+              <img class="icon-selected icon-decrement-quantity" src="./assets/images/icon-decrement-quantity.svg" alt="decrement cart Icon">
+            </div>
+            <span class="cart-quantity tiramisu">1</span>
+            <div class="icon-wrapper icon-increment" id="tiramisu">
+              <img class="icon-selected icon-increment-quantity" src="./assets/images/icon-increment-quantity.svg" alt="increment cart Icon">
+            </div>
+          </div>
+          <div class="item-name menu-item">Tiramisu</div>
+          <div class="item-description menu-item">Classic Tiramisu</div>
+          <div class="item-price menu-item">$5.50</div>
+        </div>  -->
+      </div>
+    </div>
+    <div class="cart-container">
+      <div class="cart-title" id="cart-title">Your Cart(0)</div>
+      <div class="cart-items-wrapper" id="cart-items-wrapper">
+        <div class="cart-item-wrapper">
+          <div class="cart-item-info-wrapper">
+            <div class="cart-item-title">Classic tiramisu</div>
+            <div class="cart-item-extra-info">
+              <span class="cart-item-quantity">2x</span>
+              <span class="cart-item-unit-price">@ $7.00</span>
+              <span class="cart-item-total-price"> $14.00</span>
+            </div>
+          </div>
+          <div class="cart-item-remove-wrapper icon-wrapper">
+            <img class="icon-selected cart-item-remove" src="./assets/images/icon-remove-item.svg" alt="remove cart item Icon">
+          </div>
+        </div>
+      </div>
+      <div class="cart-total-wrapper">
+
+      </div>
+      <div class="cart-carbon">
+
+      </div>
+      <div class="cart-confirm-wrapper">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Desserts
+
+  Waffle with Berries
+  Waffle
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart
+  -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
